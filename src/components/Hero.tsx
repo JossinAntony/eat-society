@@ -1,10 +1,12 @@
+import { forwardRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 
-const Hero = () => {
+const Hero = forwardRef<HTMLElement>((props, ref) => {
   return (
     <section
+      ref={ref}
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20"
     >
@@ -96,6 +98,7 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+});
+Hero.displayName = "Hero";
 
 export default Hero;

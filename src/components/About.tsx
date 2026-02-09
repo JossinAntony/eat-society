@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { Check, Truck, Award, Heart } from "lucide-react";
 import aboutImage from "@/assets/about-image.jpg";
 
@@ -24,9 +25,9 @@ const features = [
   },
 ];
 
-const About = () => {
+const About = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section id="about" className="py-20 md:py-28 bg-muted/50">
+    <section ref={ref} id="about" className="py-20 md:py-28 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
@@ -88,6 +89,7 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
+About.displayName = "About";
 
 export default About;
