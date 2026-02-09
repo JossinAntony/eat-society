@@ -34,16 +34,16 @@ const highlights = [
 
 const Highlights = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section ref={ref} className="py-16 bg-primary/5">
+    <section ref={ref} className="py-16 bg-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Why Choose Us
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-background mb-4">
             Freshness You Can Trust
           </h2>
-          <p className="font-body text-muted-foreground">
+          <p className="font-body text-background/70">
             We go the extra mile to ensure every product meets the highest
             standards of quality and safety.
           </p>
@@ -53,7 +53,7 @@ const Highlights = forwardRef<HTMLElement>((props, ref) => {
           {highlights.map((item, index) => (
             <div
               key={item.title}
-              className="bg-card p-6 rounded-2xl shadow-soft text-center group hover:shadow-elevated transition-all duration-300 opacity-0 animate-fade-in"
+              className="bg-background p-6 rounded-2xl shadow-soft text-center group hover:shadow-elevated transition-all duration-300 opacity-0 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-14 h-14 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
