@@ -49,11 +49,11 @@ const About = forwardRef<HTMLElement>((props, ref) => {
             <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
               About Us
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               A Tradition of <br />
               <span className="text-primary">Fresh Quality</span>
             </h2>
-            <p className="font-body text-muted-foreground text-lg mb-8 leading-relaxed">
+            <p className="font-body text-gray-600 text-lg mb-8 leading-relaxed">
               At Fresh & Prime, we bring you the best of both worlds: premium
               cooler-fresh meat from trusted local butchers, and time-saving
               ready-to-cook vegetables. Every vegetable is ozone-washed to
@@ -74,10 +74,10 @@ const About = forwardRef<HTMLElement>((props, ref) => {
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-display font-semibold text-foreground mb-1">
+                    <h4 className="font-display font-semibold text-gray-900 mb-1">
                       {feature.title}
                     </h4>
-                    <p className="font-body text-sm text-muted-foreground">
+                    <p className="font-body text-sm text-gray-500">
                       {feature.description}
                     </p>
                   </div>
