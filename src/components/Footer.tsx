@@ -3,7 +3,7 @@ import { Leaf, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <footer ref={ref} className="bg-foreground text-primary-foreground py-16">
+    <footer ref={ref} className="bg-muted text-foreground py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -14,28 +14,28 @@ const Footer = forwardRef<HTMLElement>((props, ref) => {
                 Fresh & Prime
               </span>
             </a>
-            <p className="font-body text-primary-foreground/70 max-w-md mb-6">
+            <p className="font-body text-muted-foreground max-w-md mb-6">
               Your trusted source for premium meats and farm-fresh vegetables.
               Quality you can taste, service you can trust.
             </p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -53,7 +53,7 @@ const Footer = forwardRef<HTMLElement>((props, ref) => {
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
-                    className="font-body text-primary-foreground/70 hover:text-primary transition-colors"
+                    className="font-body text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link}
                   </a>
@@ -77,7 +77,7 @@ const Footer = forwardRef<HTMLElement>((props, ref) => {
                 <li key={item}>
                   <a
                     href="#products"
-                    className="font-body text-primary-foreground/70 hover:text-primary transition-colors"
+                    className="font-body text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item}
                   </a>
@@ -88,20 +88,20 @@ const Footer = forwardRef<HTMLElement>((props, ref) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-body text-sm text-primary-foreground/50">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="font-body text-sm text-muted-foreground">
             © 2024 Fresh & Prime. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
               href="#"
-              className="font-body text-sm text-primary-foreground/50 hover:text-primary transition-colors"
+              className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="font-body text-sm text-primary-foreground/50 hover:text-primary transition-colors"
+              className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Terms of Service
             </a>
