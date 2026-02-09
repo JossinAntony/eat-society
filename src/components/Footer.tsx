@@ -3,7 +3,7 @@ import { Leaf, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <footer ref={ref} className="bg-muted text-foreground py-16">
+    <footer ref={ref} className="bg-white text-foreground py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
