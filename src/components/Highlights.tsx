@@ -40,10 +40,10 @@ const Highlights = forwardRef<HTMLElement>((props, ref) => {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Why Choose Us
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Freshness You Can Trust
           </h2>
-          <p className="font-body text-muted-foreground">
+          <p className="font-body text-gray-500">
             We go the extra mile to ensure every product meets the highest
             standards of quality and safety.
           </p>
@@ -53,16 +53,16 @@ const Highlights = forwardRef<HTMLElement>((props, ref) => {
           {highlights.map((item, index) => (
             <div
               key={item.title}
-              className="bg-card p-6 rounded-2xl shadow-soft text-center group hover:shadow-elevated transition-all duration-300 opacity-0 animate-fade-in"
+              className="bg-gray-50 p-6 rounded-2xl shadow-soft text-center group hover:shadow-elevated transition-all duration-300 opacity-0 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-14 h-14 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <item.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+              <h3 className="font-display text-lg font-semibold text-gray-900 mb-2">
                 {item.title}
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm text-gray-500 leading-relaxed">
                 {item.description}
               </p>
             </div>
