@@ -17,21 +17,21 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
           alt="Fresh meat and vegetables"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/50" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <span
-            className="inline-block px-4 py-2 bg-primary/20 text-primary-foreground rounded-full text-sm font-medium mb-6 opacity-0 animate-fade-in"
+            className="inline-block px-4 py-2 bg-primary/20 text-foreground rounded-full text-sm font-medium mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
             Local Butchers • Ozone Washed • Ready to Cook
           </span>
 
           <h1
-            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 opacity-0 animate-fade-in"
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
             Fresh Meat & <br />
@@ -39,7 +39,7 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
           </h1>
 
           <p
-            className="font-body text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg opacity-0 animate-fade-in"
+            className="font-body text-lg md:text-xl text-foreground/80 mb-8 max-w-lg opacity-0 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
             Premium cooler-fresh meat from local butchers. Grated & chopped
@@ -58,7 +58,7 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="bg-transparent border-foreground/30 text-foreground hover:bg-foreground/10"
             >
               View Products
             </Button>
@@ -66,30 +66,30 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
 
           {/* Stats */}
           <div
-            className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-primary-foreground/20 opacity-0 animate-fade-in"
+            className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-foreground/20 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
           >
             <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
+              <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
                 100%
               </p>
-              <p className="text-sm text-primary-foreground/70">
+              <p className="text-sm text-foreground/70">
                 Ozone Washed
               </p>
             </div>
             <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
+              <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
                 Local
               </p>
-              <p className="text-sm text-primary-foreground/70">
+              <p className="text-sm text-foreground/70">
                 Trusted Butchers
               </p>
             </div>
             <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
+              <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
                 Fresh
               </p>
-              <p className="text-sm text-primary-foreground/70">
+              <p className="text-sm text-foreground/70">
                 Ready to Cook
               </p>
             </div>
