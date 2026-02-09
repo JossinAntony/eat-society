@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import meatImage from "@/assets/meat-category.jpg";
@@ -22,9 +23,9 @@ const categories = [
   },
 ];
 
-const ProductCategories = () => {
+const ProductCategories = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section id="products" className="py-20 md:py-28 bg-background">
+    <section ref={ref} id="products" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -95,6 +96,7 @@ const ProductCategories = () => {
       </div>
     </section>
   );
-};
+});
+ProductCategories.displayName = "ProductCategories";
 
 export default ProductCategories;

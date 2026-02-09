@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { Droplets, Leaf, Scissors, ShieldCheck } from "lucide-react";
 
 const highlights = [
@@ -31,9 +32,9 @@ const highlights = [
   },
 ];
 
-const Highlights = () => {
+const Highlights = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section className="py-16 bg-primary/5">
+    <section ref={ref} className="py-16 bg-primary/5">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
@@ -70,6 +71,7 @@ const Highlights = () => {
       </div>
     </section>
   );
-};
+});
+Highlights.displayName = "Highlights";
 
 export default Highlights;

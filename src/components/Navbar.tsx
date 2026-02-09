@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { Menu, X, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+const Navbar = forwardRef<HTMLElement>((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav ref={ref} className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -73,6 +73,7 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+});
+Navbar.displayName = "Navbar";
 
 export default Navbar;
