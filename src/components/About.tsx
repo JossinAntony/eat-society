@@ -27,7 +27,7 @@ const features = [
 
 const About = forwardRef<HTMLElement>((props, ref) => {
   return (
-    <section ref={ref} id="about" className="py-20 md:py-28 bg-primary/5">
+    <section ref={ref} id="about" className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
